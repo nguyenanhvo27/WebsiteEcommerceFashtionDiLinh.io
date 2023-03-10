@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import Login from "./pages/Login";
@@ -18,9 +18,9 @@ function App() {
     <div className="overflow-hidden">
       <Router>
         <Header />
-        <Hero/>
+
         <Routes>
-        <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/product/:id" element={<ProductDetails />} />
           <Route path="/about" element={<About />} />
@@ -30,7 +30,7 @@ function App() {
         </Routes>
         <Sidebar />
         <Footer />
-        <ToastContainer/>
+        <ToastContainer />
       </Router>
     </div>
   );

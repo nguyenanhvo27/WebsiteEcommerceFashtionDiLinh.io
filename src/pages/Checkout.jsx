@@ -85,11 +85,8 @@ function Checkout() {
         <button className="bg-orange-500 w-[100px] h-[40px] rounded-md mt-8 ">
           Tiếp tục
         </button>
-       
       </div>
-      <div className="flex-1">
-            {/* <CartItem/> */}
-      </div>
+      <div className="flex-1"></div>
     </div>
   );
 }

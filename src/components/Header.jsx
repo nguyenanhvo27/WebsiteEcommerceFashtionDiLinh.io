@@ -103,24 +103,28 @@ const Header = () => {
                     tabindex="-1"
                   >
                     <div class="py-1" role="none">
-                      <a
-                        href="/login"
-                        class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
-                        role="menuitem"
-                        tabindex="-1"
-                        id="menu-item-0"
-                      >
-                        Login
-                      </a>
-                      <a
-                        href="/register"
-                        class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
-                        role="menuitem"
-                        tabindex="-1"
-                        id="menu-item-1"
-                      >
-                        Register
-                      </a>
+                      <Link to={"/login"}>
+                        <a
+                          href="/login"
+                          class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
+                          role="menuitem"
+                          tabindex="-1"
+                          id="menu-item-0"
+                        >
+                          Login
+                        </a>
+                      </Link>
+                      <Link to={"/register"}>
+                        <a
+                          href="/register"
+                          class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
+                          role="menuitem"
+                          tabindex="-1"
+                          id="menu-item-1"
+                        >
+                          Register
+                        </a>
+                      </Link>
                       <a
                         href="#"
                         class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
